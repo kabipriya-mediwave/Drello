@@ -26,8 +26,9 @@ body {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
-.list-wrapper {
+.wrapper {
   margin-right: 12px;
   display: inline-block;
   height: 100%;
@@ -39,7 +40,8 @@ body {
 .taskDiv {
   margin-bottom: 10px;
   padding: 10px 8px 8px 8px;
-  background-color: white;
+  background-color: lightgray;
+  border-radius: 2px;
   color: #333;
 }
 .task-header {
@@ -63,13 +65,12 @@ body {
   padding: 8px 8px 4px 12px;
   overflow: hidden;
   cursor: pointer;
-  background-color: lightgray;
-  border-radius: 8px;
+  background-color: white;
 }
 .list-group:hover {
   background-color: wheat;
 }
-.list-item-message {
+.list-todo {
   margin-bottom: 4px;
   overflow: hidden;
   word-wrap: break-word;

@@ -1,11 +1,11 @@
-const InProgress = () => {
+const TodoProcess = () => {
   return (
     <>
       <div className="col taskDiv">
-        <h2>In Progress</h2>
+        <h2>In Process</h2>
       </div>
     </>
   );
 };
 
-export default InProgress;
+export default TodoProcess;
