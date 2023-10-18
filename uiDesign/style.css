@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #2970a2;
+  color: #cce0ff;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+.main-header h1 {
+  margin-left: 24px;
+  color: #cce0ff;
+}
+.container {
+  margin: 12px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.list-wrapper {
+  margin-right: 12px;
+  display: inline-block;
+  height: 100%;
+  margin: 0 4px;
+  scroll-margin: 8px;
+  vertical-align: top;
+  width: 372px;
+}
+.taskDiv {
+  margin-bottom: 10px;
+  padding: 10px 8px 8px 8px;
+  background-color: #e4e3e4;
+  color: #333;
+  border-radius: 8px;
+}
+.task-header {
+  padding: 8px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.task-header button {
+  width: 24px;
+  height: 24px;
+}
+
+.list-group {
+  margin-top: 8px;
+  padding: 8px 8px 4px 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.list-group:hover {
+  background-color: #eee;
+}
+.list-item-title {
+  background-color: #c5c5c5;
+}
+.list-item-message {
+  margin-bottom: 4px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.list-item-time {
+  padding-top: 6px;
+  float: right;
+}
+@media only screen and (max-width: 1120px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .list-wrapper {
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .list-wrapper {
+    max-width: 600px;
+  }
+}
