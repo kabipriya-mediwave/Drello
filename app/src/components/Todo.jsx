@@ -1,6 +1,5 @@
 import TodoCard from "./TodoCard";
-
-const Todo = ({ handleAdd, handleDelete, handleEdit, tasks }) => {
+const Todo = ({ handleAdd, handleDelete, handleEdit, todos }) => {
   const updateAdd = (value, id) => {
     handleAdd(value, id);
   };
@@ -13,10 +12,10 @@ const Todo = ({ handleAdd, handleDelete, handleEdit, tasks }) => {
     <div className="taskDiv">
       <div className="task-header">
         <h2>TO DO</h2>
-        <button onClick={addCard}>+</button>
+        <button onClick={addCard}>➕</button>
       </div>
       <div>
-        {tasks.map((t) => (
+        {todos.map((t) => (
           <div key={t.id}>
             <TodoCard
               sendAdd={updateAdd}
